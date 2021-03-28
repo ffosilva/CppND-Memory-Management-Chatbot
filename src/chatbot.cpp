@@ -95,8 +95,6 @@ ChatBot &ChatBot::operator=(ChatBot &&other)
 
     if (this != &other)
     {
-        return *this;
-
         delete _image;
         this->_image = other._image;
         this->_currentNode = other._currentNode;
